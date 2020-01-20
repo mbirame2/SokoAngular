@@ -27,7 +27,7 @@ export class FemmesComponent implements OnInit {
   isLoggedIn:boolean=false;
   constructor(private productService:ProductService,private _auth: SokoService ,private sharedService:SharedServiceService) { }
   ngOnInit() {
-    this.productService.getAllNouveaute()
+    this.productService.getAllFemme()
             .subscribe((result) => {
               this.globalResponse = result.body;              
             },
